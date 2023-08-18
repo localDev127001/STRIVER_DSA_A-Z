@@ -1,0 +1,9 @@
+Iterate through the arraya and check if the element exists or not. [N,1]
+Code:
+for(int i:arr)
+{
+if(i==target) return true;
+}
+return false;
+
+Difficulty: very easy
