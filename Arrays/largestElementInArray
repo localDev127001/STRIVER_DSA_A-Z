@@ -9,7 +9,7 @@ Output: 10
 Explanation: 10 is the largest element in the array. 
 
 Solution:
-A. Sort the array and return the last element . [N*N , 1]   
+A. Sort the array and return the last element . [N*LOGN , 1]   
 -- Arrays.sort(arr)
 -- return arr[arr.length-1]
 
