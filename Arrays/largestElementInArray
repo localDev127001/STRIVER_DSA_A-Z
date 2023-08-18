@@ -1,0 +1,30 @@
+Example 1:
+Input: arr[] = {2,5,1,3,0};
+Output: 5
+Explanation: 5 is the largest element in the array. 
+
+Example2: 
+Input: arr[] = {8,10,5,7,9};
+Output: 10
+Explanation: 10 is the largest element in the array. 
+
+Solution:
+A. Sort the array and return the last element . [N*N , 1]   
+-- Arrays.sort(arr)
+-- return arr[arr.length-1]
+
+
+B. Use a max variable and iterate till the end of the array and return max. [N,1]
+--
+static int findLargestElement(int arr[]) {
+    int max= arr[0];
+    for (int i = 0; i < arr.length; i++) {
+      if (arr[i] > max) {
+        max= arr[i];
+      }
+    }
+    return max;
+  }
+
+
+Difficulty: very easy.
