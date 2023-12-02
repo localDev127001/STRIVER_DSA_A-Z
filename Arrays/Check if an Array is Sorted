@@ -1,4 +1,8 @@
-Problem Statement: Given an array of size n, write a program to check if the given array is sorted in (ascending / Increasing / Non-decreasing) order or not. If the array is sorted then return True, Else return False.
+Problem Statement: Given an array of size n, write a program to check if the given array is sorted in (ascending / Increasing / Non-decreasing) order or not.
+If the array is sorted then return True, Else return False.
+
+Difficulty : very easy
+
 Soln:
 1.Brute Force Approach
     approach:run 2 for loops and check for every element if its smaller than the next element [N**2,1]
@@ -22,4 +26,4 @@ Soln:
     return true;
 
 
-Difficulty : very easy
+
