@@ -36,7 +36,7 @@ return k;
 
 
 
-2. Using 2 pointers approach
+2. Using 2 pointers approach ---[N,1]
 
 Intuition: We can think of using two pointers ‘i’ and ‘j’, we move ‘j’ till we don’t get a number arr[j] which is different from arr[i].
 As we got a unique number we will increase the i pointer and update its value by arr[j]. 
