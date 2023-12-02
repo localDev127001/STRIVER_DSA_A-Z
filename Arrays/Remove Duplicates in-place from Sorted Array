@@ -1,0 +1,72 @@
+difficulty: easy 
+
+
+Problem Statement: Given an integer array sorted in non-decreasing order, remove the duplicates in place such that each unique element appears only once. 
+The relative order of the elements should be kept the same.
+If there are k elements after removing the duplicates, then the first k elements of the array should hold the final result.
+ It does not matter what you leave beyond the first k elements.
+
+Note: Return k after placing the final result in the first k slots of the array.
+
+
+2 approaches:
+
+1. Using hashSet -------------------[N,N (insertion in hashset is 0(1))]
+
+HashSet<Integer> ans = new HashSet<>();
+for(int i:arr)
+{
+ans.add(i)
+}
+
+return ans.size();
+
+---------------------------------------------------------------------------
+If we want to return the index of the array as well as remove the duplicates in place
+HashSet < Integer > set = new HashSet < > ();
+for (int i = 0; i < arr.length; i++) {
+    set.add(arr[i]);
+}
+int k = set.size();
+int j = 0;
+for (int x: set) {
+    arr[j++] = x;
+}
+return k;
+
+
+
+2. Using 2 pointers approach
+
+Intuition: We can think of using two pointers ‘i’ and ‘j’, we move ‘j’ till we don’t get a number arr[j] which is different from arr[i].
+As we got a unique number we will increase the i pointer and update its value by arr[j]. 
+
+Approach:
+Take a variable i as 0;
+Use a for loop by using a variable ‘j’ from 1 to length of the array.
+If arr[j] != arr[i], increase ‘i’ and update arr[i] == arr[j].
+ After completion of the loop return i+1, i.e size of the array of unique elements.
+
+
+int i=0;
+for(int j=1;j<arr.length;j++)
+{
+if(arr[j]!=arr[j-1])
+{
+i+=1;
+arr[i]=arr[j];
+}
+return i+1;
+
+------------------------
+int i=0;
+for(int j=1;j<arr.size();j++)
+{
+  if(!arr.get(j).equals(arr.get(j-1)))
+  {
+    i+=1;
+    arr.set(i, arr.get(j));
+  }
+
+}
+		return i+1;
