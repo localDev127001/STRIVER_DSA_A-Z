@@ -1,0 +1,15 @@
+
+Basic structure of LL:
+Class node
+{
+int data;
+Node next;
+
+constructor!!
+node(int x)
+{
+this.data=x;
+next=null;
+}
+}
+
