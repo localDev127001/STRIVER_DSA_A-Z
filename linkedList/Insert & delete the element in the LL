@@ -1,0 +1,11 @@
+4 conditions:
+1. insert at head
+2. insert at tail
+3. insert at the given position
+4. insert before the given value
+
+
+similar is with the delete
+
+Tc:O(N)
+sc:O(1)
